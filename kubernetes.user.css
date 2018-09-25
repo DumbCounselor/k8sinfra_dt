@@ -1,0 +1,124 @@
+/* ==UserStyle==
+@name           kubernetes-doc
+@namespace      github.com/openstyles/stylus
+@version        0.0.1
+@description    kubernetes documentation
+@author         Sumit Murari
+@var color encyclopedia-color "Encyclopedia color" #555555
+@var color href-color "Link color" green
+@var color border-color "Border Color" #fff
+@var color base-text-color "Base text color" #fff
+@var color hover-color "Hover color" #444444
+@var color pitch-black "Pure black" #000
+==/UserStyle== */
+@-moz-document domain("kubernetes.io") {
+
+    a {
+        color: var(--href-color);
+    }
+
+    body,
+    header {
+        background-color: var(--encyclopedia-color);
+        color: var(--base-text-color);
+    }
+
+
+    header {
+        background-color: var(--encyclopedia-color);
+    }
+
+    pre {
+        border: 1px solid var(--border-color) !important;
+        background-color: var(--encyclopedia-color) !important;
+    }
+
+    section,
+    section#cncf,
+
+    section#features,
+    section#users div.col-nav,
+    section#video {
+        border: 1px solid var(--border-color);
+        background-color: var(--encyclopedia-color);
+    }
+
+    div.aboutsection,
+    div.cards,
+    div.content {
+        border: 0.5px solid var(--border-color);
+        color: var(--base-text-color);
+        background-color: var(--encyclopedia-color) !important;
+    }
+
+
+    /*.  Classes */
+    .flip-nav header {
+        background-color: var(--encyclopedia-color) !important;
+    }
+
+    .infobar {
+        background-color: var(--pitch-black);
+    }
+
+    div#infobarLinks div.whitebar {
+        border: 1px solid var(--border-color);
+        background-color: var(--pitch-black);
+    }
+
+    /*.gridPage #mainContent .content .case-study p {*/
+    .gridPage p,
+    .gridPage #video {
+
+        color: var(--base-text-color) !important;
+    }
+
+    .gridPage #video {
+        background-color: var(--encyclopedia-color);
+    }
+
+    .issue-button-container,
+    .lastedit {
+        background-color: var(--encyclopedia-color);
+    }
+
+    .light-text {
+        /* this is converted to dark color */
+        color: var(--base-text-color);
+    }
+
+    .pages a {
+        color: var(--href-color);
+    }
+
+    .pi-accordion .title {
+        color: var(--href-color);
+    }
+
+    /* ID */
+    #docsContent code {
+        background-color: var(--encyclopedia-color);
+    }
+
+    #docsToc {
+        border: 1px solid var(--border-color);
+        color: #ffffff;
+        background-color: var(--encyclopedia-color);
+    }
+
+
+    #encyclopedia {
+        background-color: var(--encyclopedia-color);
+        color: var(--base-text-color)
+    }
+
+
+    #pre-footer {
+        border: 0.5px solid var(--border-color);
+    }
+
+
+    #viewDocs:hover {
+        background-color: var(--hover-color);
+    }
+}
