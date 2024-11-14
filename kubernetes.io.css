@@ -1,0 +1,160 @@
+/* ==UserStyle==
+@name           k8sio_dt
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    kubernetes.io dark theme
+@author         John Doe
+@var color encyclopedia-color "Even more light background color" #555555
+@var color base-text-color "Base text color" #fff
+@var color pitch-black "Pure black" #000
+@var color crx-background "Background color" #0a0a0a
+@var color crx-background1 "More light color for background" #262626
+@var color crx-foreground "Foreground color" #d4d4d4
+==/UserStyle== */
+@-moz-document domain("kubernetes.io") {
+    body {
+        background-color: var(--crx-background) !important;
+        color: var(--crx-foreground) !important;
+    }
+
+    section:not(.light-text):not(.call-to-action) {
+        background-color: var(--crx-background) !important;
+        color: var(--crx-foreground) !important;
+    }
+
+    .gridPage p:not(.announcement-main > p) {
+        color: var(--crx-foreground) !important;
+    }
+
+    .td-sidebar-nav a {
+        color: var(--crx-foreground) !important;
+    }
+
+    .search-bar,
+    .search-input,
+    input[type="email"] {
+        background-color: var(--crx-background) !important;
+        color: var(--crx-foreground) !important;
+    }
+
+    #kubeweekly {
+        background-color: var(--crx-background1) !important;
+        color: var(--crx-foreground) !important;
+    }
+
+    .feature-state-notice,
+    .feature-state-notice code,
+    .feature-state-name,
+    .feature-box div {
+        background-color: #172554 !important;
+        color: var(--crx-foreground) !important;
+    }
+
+    .gutter {
+        background-color: var(--crx-background1) !important;
+    }
+
+    .td-sidebar {
+        border-color: var(--crx-background1) !important;
+    }
+
+    .flip-nav header .td-navbar {
+        background-color: var(--crx-background1) !important;
+    }
+
+    .flip-nav header .td-navbar a {
+        color: var(--crx-foreground) !important;
+    }
+
+    .pi-pushmenu .sled {
+        background-color: var(--crx-background) !important;
+    }
+
+    .pi-pushmenu li {
+        border-bottom: 1px solid var(--crx-background1) !important;
+    }
+
+    .btn-primary {
+        color: var(--crx-foreground) !important;
+    }
+
+    .dropdown-menu {
+        border-color: var(--crx-background1) !important;
+        background-color: var(--crx-background1) !important;
+    }
+
+    .dropdown-item {
+        color: var(--crx-foreground) !important;
+    }
+
+    .dropdown-item:hover {
+        background: var(--crx-background) !important;
+    }
+
+    body .alert {
+        background-color: var(--crx-background1) !important;
+        color: var(--crx-foreground) !important;
+    }
+
+    body .alert h4 {
+        color: var(--crx-foreground) !important;
+    }
+
+    pre,
+    .highlight {
+        background-color: var(--crx-background1) !important;
+        color: var(--crx-foreground) !important;
+    }
+
+    .includecode {
+        background-color: var(--encyclopedia-color) !important;
+    }
+
+    .copy-code-icon {
+        background-color: var(--pitch-black) !important;
+    }
+
+    table {
+
+        color: var(--base-text-color) !important;
+    }
+
+    code:not(a code) {
+        background-color: var(--encyclopedia-color) !important;
+        color: var(--crx-foreground) !important;
+    }
+
+    ul li a span {
+        color: var(--crx-foreground) !important;
+    }
+
+    ul .active {
+        -webkit-text-stroke: 0.2px #9ecfc7;
+    }
+
+    .td-outer a {
+        color: #3b82f6 !important;
+    }
+
+    .td-outer a:hover {
+        color: #60a5fa !important;
+    }
+
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #252121;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+}
