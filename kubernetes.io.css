@@ -119,9 +119,18 @@
         color: var(--base-text-color) !important;
     }
 
-    code:not(a code) {
+    code:not(a code, h3 code, p a code) {
         background-color: var(--encyclopedia-color) !important;
         color: var(--crx-foreground) !important;
+    }
+
+    h3 code {
+        color: #828080 !important;
+    }
+
+    p a code {
+        background-color: var(--encyclopedia-color) !important;
+        color: #00aa !important;
     }
 
     ul li a span {
@@ -130,11 +139,6 @@
 
     ul .active {
         -webkit-text-stroke: 0.2px #9ecfc7;
-    }
-
-    p a code {
-        background-color: var(--encyclopedia-color) !important;
-        color: #00aa !important;
     }
 
     .td-outer a {
