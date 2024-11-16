@@ -132,6 +132,11 @@
         -webkit-text-stroke: 0.2px #9ecfc7;
     }
 
+    p a code {
+        background-color: var(--encyclopedia-color) !important;
+        color: #00aa !important;
+    }
+
     .td-outer a {
         color: #3b82f6 !important;
     }
