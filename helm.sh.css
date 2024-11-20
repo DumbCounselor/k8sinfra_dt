@@ -1,0 +1,52 @@
+/* ==UserStyle==
+@name           helmsh_dt
+@namespace      github.com/openstyles/stylus
+@version        0.0.1
+@description    helm.sh dark theme
+@author         John Doe
+@var color encyclopedia-color "Even more light background color" #555555
+@var color base-text-color "Base text color" #fff
+@var color pitch-black "Pure black" #000
+@var color crx-background "Background color" #0a0a0a
+@var color crx-background1 "More light color for background" #262626
+@var color crx-foreground "Foreground color" #d4d4d4
+==/UserStyle== */
+@-moz-document domain("helm.sh") {
+    * {
+        background-image: none !important;
+        background-color: var(--crx-background) !important;
+        color: var(--base-text-color) !important;
+        border-color: var(--encyclopedia-color) !important;
+    }
+
+    .navbar-top:after {
+        background-color: var(--crx-background) !important;
+    }
+
+    .navbar-top li.versioner a.versioner-trigger {
+        border-color: var(--crx-background) !important;
+    }
+
+    pre,
+    span {
+        background-color: var(--crx-background1) !important;
+    }
+
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #252121;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+}
