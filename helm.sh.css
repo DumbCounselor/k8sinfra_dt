@@ -28,7 +28,12 @@
     }
 
     pre,
+    pre code,
     span:not(.icon) {
+        background-color: var(--crx-background1) !important;
+    }
+
+    ul[class="current"] .active {
         background-color: var(--crx-background1) !important;
     }
 
