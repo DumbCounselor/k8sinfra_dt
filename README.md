@@ -1,4 +1,4 @@
-# k8sio_dt
+# k8sinfra_dt
 Dark theme for kubernetes.io.
 Also added dark theme for helm.sh.
 
