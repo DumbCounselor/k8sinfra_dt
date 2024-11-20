@@ -28,7 +28,7 @@
     }
 
     pre,
-    span {
+    span:not(.icon) {
         background-color: var(--crx-background1) !important;
     }
 
