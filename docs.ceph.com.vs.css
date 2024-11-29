@@ -1,0 +1,83 @@
+/* ==UserStyle==
+@name           docscephcom_dt_vs 
+@namespace      github.com/openstyles/stylus
+@version        0.0.1
+@description    Dark theme for docs.ceph.com website. Works when #enable-force-dark flag enabled in chromium
+@author         John Doe
+@var color encyclopedia-color "Even more light background color" #555555
+@var color base-text-color "Base text color" #fff
+@var color pitch-black "Pure black" #000
+@var color crx-background "Background color" #0a0a0a
+@var color crx-background1 "More light color for background" #262626
+@var color crx-foreground "Foreground color" #d4d4d4
+@var color bgh2 "Section h2 bg color" #845b21
+@var color bgh1 "Section h1 bg color" #4b1d1d
+@var color bgimg "Images bg color" #22cb79
+@var color curli "Current side menu li color" #13f61c
+==/UserStyle== */
+@-moz-document domain("docs.ceph.com") {
+
+    .top-bar > div,
+    .top-bar > div * {
+        border: 0px !important;
+    }
+
+    ul[class="current"] .active {
+        background-color: var(--crx-background) !important;
+    }
+
+    .wy-menu-vertical li.current > a {
+        font-weight: bold;
+        font-size: 100%;
+        color: var(--curli);
+    }
+
+    .admonition-title {
+        color: black !important;
+        background-color: var(--crx-background1) !important;
+    }
+
+    .admonition.note {
+        color: black !important;
+        background-color: var(--encyclopedia-color) !important;
+        border: 0px !important;
+    }
+
+    .admonition.warning,
+    .admonition.tip,
+    .admonition.important {
+        border: 0px !important;
+    }
+
+    section h1 {
+        background-color: var(--bgh2) !important;
+        border: 0px !important;
+    }
+
+    section h2 {
+        background-color: var(--bgh2) !important;
+    }
+
+    div[id="docubetter"] {
+        background-color: var(--crx-background1) !important;
+        border: 0px !important;
+    }
+
+    .wy-breadcrumbs {
+        background-color: black !important;
+    }
+
+    .wy-breadcrumbs > li > a:visited {
+        color: white;
+    }
+
+    li[aria-expanded="true"],
+    li[aria-expanded="true"] * {
+        background-color: var(--encyclopedia-color) !important;
+    }
+
+    img {
+        color-scheme: dark !important;
+        background-color: var(--bgimg) !important;
+    }
+}

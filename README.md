@@ -1,6 +1,6 @@
 # k8sinfra_dt
-Dark theme for kubernetes.io.
-Also added dark themes for helm.sh.
+Dark themes for kubernetes.io, helm.sh, docs.ceph.com
+VS in file name means, that theme made for using with enabled #enable-force-dark flag in Chromium-based browser.
 
 # Based on
 
